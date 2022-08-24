@@ -94,7 +94,10 @@ p {
 }
 
 .page-Error {
-    width: 600px;
-    height: 700px;
+    width: 700px;
     object-fit: unset;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
