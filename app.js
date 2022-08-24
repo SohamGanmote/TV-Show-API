@@ -86,10 +86,7 @@ const show = async() => {
             }
         }
     } catch (err) {
-        const error = document.createElement("img");
-        error.setAttribute("src", "Error404.svg")
-        error.classList.add("page-Error");
-        lists.append(error);
+        console.log("Server Error");
     }
     search.value = "";
 }
