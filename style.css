@@ -1,0 +1,100 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.inputBox {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+input {
+    margin: 20px 10px;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 1px solid rgb(128, 128, 128);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #90B77D;
+    color: white;
+    border: 2px solid #84b969;
+    border-radius: 25px;
+}
+
+.cardBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0px 50px
+}
+
+.card {
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+h2 {
+    text-align: left;
+    margin: 0px 20px;
+    font-size: 25px;
+}
+
+.summary p {
+    text-align: left;
+    font-size: 12px;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+p {
+    text-align: left;
+    font-size: 12px;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.genres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.genres p {
+    text-align: center;
+    background-color: rgba(58, 58, 58, 0.1);
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin: 5px auto;
+    width: 100px;
+}
+
+.watch {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.page-Error {
+    width: 600px;
+    height: 700px;
+    object-fit: unset;
+}
