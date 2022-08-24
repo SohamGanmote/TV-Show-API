@@ -103,6 +103,10 @@ p {
     transform: translate(-50%, -50%);
 }
 
+.display {
+    display: none;
+}
+
 @media only screen and (max-width: 500px) {
     .page-Error {
         display: none;

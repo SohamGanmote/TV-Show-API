@@ -20,7 +20,7 @@ const show = async() => {
 
         console.log(request);
 
-        const numberOfMovies = request.data.length;
+        const numberOfMovies = await request.data.length;
 
         if (numberOfMovies === 0) {
 
@@ -36,7 +36,7 @@ const show = async() => {
         if (numberOfMovies !== 0) {
 
             const errImg = document.querySelector(".page-Error");
-            errImg.remove();
+            errImg.classList.add("display");
 
             for (let i = 0; i < numberOfMovies; i++) {
                 const card = document.createElement("div");
@@ -86,7 +86,15 @@ const show = async() => {
             }
         }
     } catch (err) {
-        console.log("Server Error");
+        console.log("Server Error : ", err);
+
+        const errImg = document.querySelector(".page-Error");
+        errImg.remove();
+
+        const error = document.createElement("img");
+        error.setAttribute("src", "Error404.svg")
+        error.classList.add("page-Error");
+        lists.append(error);
     }
     search.value = "";
 }
