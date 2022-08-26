@@ -86,15 +86,26 @@ const show = async() => {
             }
         }
     } catch (err) {
+
+        const request = await axios.get(`https://api.tvmaze.com/search/shows?q=${showname}`)
+
+        console.log(request);
+
+        const numberOfMovies = await request.data.length;
+
         console.log("Server Error : ", err);
 
-        const errImg = document.querySelector(".page-Error");
-        errImg.remove();
+        if (numberOfMovies === 0) {
 
-        const error = document.createElement("img");
-        error.setAttribute("src", "Error404.svg")
-        error.classList.add("page-Error");
-        lists.append(error);
+            const errImg = document.querySelector(".page-Error");
+            errImg.remove();
+
+            const error = document.createElement("img");
+            error.setAttribute("src", "Error404.svg")
+            error.classList.add("page-Error");
+
+            lists.append(error);
+        }
     }
     search.value = "";
 }
